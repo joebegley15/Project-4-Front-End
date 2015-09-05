@@ -1,6 +1,6 @@
-(function songsAppIIFE(ang){
+(function musicAppIIFE(){
 
-  var app = ang.module('songApp', ['ngRoute']);
+  var app = angular.module('musicApp', ['ngRoute']);
 
   app.config(function($routeProvider) {
 
@@ -15,4 +15,4 @@
       });
   });
 
-})(angular);
+})();
