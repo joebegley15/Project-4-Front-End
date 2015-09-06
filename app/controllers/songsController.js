@@ -8,8 +8,7 @@
     this.appSettings = appSettings;
 
     function init(){
-      // Init the customers from the factory
-      //this.customers = customersFactory.getCustomers();
+      // Init the songs from the factory
       songsFactory.getSongs();
     }
 
