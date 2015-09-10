@@ -1,0 +1,16 @@
+<!-- THIS IS A PARTIAL SO THE DOCTYPE, BODY AND SCRIPT TAGS ARE UNNECCESARY -->
+
+<h1>Albums</h1>
+<table>
+  <tr>
+    <th ng-click="albumsCtrl.doSort('title')">Title</th>
+    <th ng-click="albumsCtrl.doSort('artist')">Artist</th>
+    <th ng-click="albumsCtrl.doSort('rating')">Rating</th>
+    <th ng-click="albumsCtrl.doSort('review')">Review</th>
+  </tr>
+  <tr ng-repeat="album in albumsCtrl.albums |orderBy:albumsCtrl.sortBy:albumsCtrl.reverse">
+    <td>{{album.title}}</td>
+    <td>{{album.artist}}</td>
+    <td>{{album.rating}}</td>
+    <td>{{album.review}}</td>
+</table>
