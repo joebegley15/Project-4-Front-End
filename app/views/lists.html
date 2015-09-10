@@ -1,0 +1,16 @@
+<!-- THIS IS A PARTIAL SO THE DOCTYPE, BODY AND SCRIPT TAGS ARE UNNECCESARY -->
+
+<h1>Lists</h1>
+<table>
+  <tr>
+    <th ng-click="listsCtrl.doSort('title')">Title</th>
+    <th ng-click="listsCtrl.doSort('description')">Description</th>
+    <th ng-click="listsCtrl.doSort('list')">List</th>
+    <th ng-click="listsCtrl.doSort('author')">Author</th>
+  </tr>
+  <tr ng-repeat="list in listsCtrl.lists |orderBy:listsCtrl.sortBy:listsCtrl.reverse">
+    <td>{{list.title}}</td>
+    <td>{{list.description}}</td>
+    <td>{{list.list}}</td>
+    <td>{{list.author}}</td>
+</table>
