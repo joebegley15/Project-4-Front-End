@@ -10,7 +10,7 @@
     function init(){
       // Init the songs from the factory
       songsFactory.getSongs();
-    }
+    };
 
     init();
 
@@ -24,6 +24,6 @@
  SongsController.$inject = ['songsFactory', 'appSettings'];
 
  // The Controller is part of the module.
- angular.module('songsApp').controller('songsController', SongsController);
+ angular.module('musicApp').controller('songsController', SongsController);
 
 })();

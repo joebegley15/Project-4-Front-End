@@ -1,8 +1,10 @@
+'use strict';
+
 (function musicAppIIFE(){
 
   var app = angular.module('musicApp', ['ngRoute']);
 
-  app.config(function($routeProvider) {
+  app.config(['$routeProvider', function($routeProvider) {
 
     $routeProvider
       .when('/', {
@@ -13,6 +15,6 @@
       .otherwise({
         redirectTo: '/'
       });
-  });
+  }]);
 
 })();

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="musicApp">
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
 </head>
 <body>
+
   <nav class="navbar navbar-default">
     <div class="container-fluid">
       <!-- Brand and toggle get grouped for better mobile display -->
@@ -28,6 +29,8 @@
     </div><!-- /.container-fluid -->
   </nav>
 
+  <ng-view></ng-view>
+
   <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
@@ -39,7 +42,7 @@
   <script type="text/javascript" src="app/app.js"></script>
 
   <!-- factories -->
-  <script type="text/javascript" src="app/factories/songssfactory.js"></script>
+  <script type="text/javascript" src="app/factories/songsFactory.js"></script>
 
   <!-- controllers -->
   <script type="text/javascript" src="app/controllers/songsController.js"></script>

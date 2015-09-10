@@ -1,6 +1,6 @@
 // Create applicaton wide settings
-angular.module("songsApp").value('appSettings', {
-  title: "Songs Application",
+angular.module("musicApp").value('appSettings', {
+  title: "Music Application",
   version: "1.0"
 });
 
