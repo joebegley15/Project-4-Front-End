@@ -1,15 +1,17 @@
 <!-- THIS IS A PARTIAL SO THE DOCTYPE, BODY AND SCRIPT TAGS ARE UNNECCESARY -->
 
-<h1>All Songs of {{songsCtrl.appsetting.version}}</h1>
+<h1>Songs</h1>
 <table>
   <tr>
     <th ng-click="songsCtrl.doSort('title')">Title</th>
+    <th ng-click="songsCtrl.doSort('artist')">Artist</th>
     <th ng-click="songsCtrl.doSort('album')">Album</th>
     <th ng-click="songsCtrl.doSort('rating')">Rating</th>
     <th ng-click="songsCtrl.doSort('review')">Review</th>
   </tr>
   <tr ng-repeat="song in songsCtrl.songs |orderBy:songsCtrl.sortBy:songsCtrl.reverse">
     <td>{{song.title}}</td>
+    <td>{{song.artist}}</td>
     <td>{{song.album}}</td>
     <td>{{song.rating}}</td>
     <td>{{song.review}}</td>

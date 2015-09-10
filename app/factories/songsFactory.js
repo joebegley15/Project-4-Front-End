@@ -7,7 +7,6 @@
     factory.songs = [];
 
     factory.getSongs = function(){
-      debugger;
       // allow access to the list of songs
       return  $http.get('http://localhost:8000/songs').success(function(response){
         angular.copy(response, factory.songs);
