@@ -1,16 +1,51 @@
 <!-- THIS IS A PARTIAL SO THE DOCTYPE, BODY AND SCRIPT TAGS ARE UNNECCESARY -->
 
-<h1>Lists</h1>
-<table>
-  <tr>
-    <th ng-click="listsCtrl.doSort('title')">Title</th>
-    <th ng-click="listsCtrl.doSort('description')">Description</th>
-    <th ng-click="listsCtrl.doSort('list')">List</th>
-    <th ng-click="listsCtrl.doSort('author')">Author</th>
-  </tr>
-  <tr ng-repeat="list in listsCtrl.lists |orderBy:listsCtrl.sortBy:listsCtrl.reverse">
-    <td>{{list.title}}</td>
-    <td>{{list.description}}</td>
-    <td>{{list.list}}</td>
-    <td>{{list.author}}</td>
-</table>
+<!-- THIS IS A PARTIAL SO THE DOCTYPE, BODY AND SCRIPT TAGS ARE UNNECCESARY -->
+
+  <!-- Page Content -->
+  <div class="container">
+    <div class="row">
+      <!-- Blog Post Content Column -->
+      <div class="col-lg-8">
+        <div ng-repeat="list in listsCtrl.lists |orderBy:listsCtrl.sortBy:listsCtrl.reverse">
+          <!-- Title -->
+          <h1>{{list.title}}</h1>
+          <!-- Author -->
+          <p class="lead">
+            {{list.description}}
+          </p>
+          <p class="lead">
+            By: {{list.author}}
+          </p>
+          <!-- Repeated items (lists) -->
+          <div ng-repeat="header in list.listHeader">
+            <p class="lead">
+              {{header}}
+            </p>
+            <p class="lead">
+              {{list.listBody[$index]}}
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<div>
+  <h1>Lists</h1>
+  <table>
+    <tr>
+      <th ng-click="listsCtrl.doSort('title')">Title</th>
+      <th ng-click="listsCtrl.doSort('description')">Description</th>
+      <th ng-click="listsCtrl.doSort('author')">Author</th>
+      <th ng-click="listsCtrl.doSort('listHeader')">List Header</th>
+      <th ng-click="listsCtrl.doSort('listBody')">List Body</th>
+    </tr>
+    <tr ng-repeat="list in listsCtrl.lists |orderBy:listsCtrl.sortBy:listsCtrl.reverse">
+      <td>{{list.title}}</td>
+      <td>{{list.description}}</td>
+      <td>{{list.author}}</td>
+      <td>{{list.listBody}}</td>
+      <td>{{list.listHeader}}</td>
+    </tr>
+  </table>
+</div>

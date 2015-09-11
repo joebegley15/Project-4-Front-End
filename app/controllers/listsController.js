@@ -1,4 +1,4 @@
-(function albumsControllerIIFE(){
+(function listsControllerIIFE(){
 
   var ListsController = function(listsFactory, appSettings){
     this.sortBy = "title";
