@@ -19,33 +19,17 @@
           </p>
           <!-- Repeated items (lists) -->
           <div ng-repeat="header in list.listHeader">
-            <p class="lead">
+          <ol>
+            <p class="lead listHead">
               {{header}}
             </p>
-            <p class="lead">
+            <p class="lead listBody">
               {{list.listBody[$index]}}
             </p>
+          </ol>
           </div>
         </div>
       </div>
     </div>
   </div>
 <div>
-  <h1>Lists</h1>
-  <table>
-    <tr>
-      <th ng-click="listsCtrl.doSort('title')">Title</th>
-      <th ng-click="listsCtrl.doSort('description')">Description</th>
-      <th ng-click="listsCtrl.doSort('author')">Author</th>
-      <th ng-click="listsCtrl.doSort('listHeader')">List Header</th>
-      <th ng-click="listsCtrl.doSort('listBody')">List Body</th>
-    </tr>
-    <tr ng-repeat="list in listsCtrl.lists |orderBy:listsCtrl.sortBy:listsCtrl.reverse">
-      <td>{{list.title}}</td>
-      <td>{{list.description}}</td>
-      <td>{{list.author}}</td>
-      <td>{{list.listBody}}</td>
-      <td>{{list.listHeader}}</td>
-    </tr>
-  </table>
-</div>
