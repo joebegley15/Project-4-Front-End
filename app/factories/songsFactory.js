@@ -8,13 +8,13 @@
 
     factory.getSongs = function(){
       // allow access to the list of songs
-      return  $http.get('http://localhost:8000/songs').success(function(response){
+      return  $http.get('https://frozen-wave-7557.herokuapp.com/songs').success(function(response){
         angular.copy(response, factory.songs);
       });
     };
 
     factory.getSong = function(songId){
-      return  $http.get('http://localhost:8000/songs/' + songId).success(function(response){
+      return  $http.get('https://frozen-wave-7557.herokuapp.com/songs/' + songId).success(function(response){
         angular.copy(response, factory.song)});
     };
     return factory;
