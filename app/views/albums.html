@@ -14,17 +14,15 @@
             <p class="lead">
               {{album.artist}}
             </p>
+            <p class="lead rating">{{album.rating}}</p>
           </div>
           <!-- Rating -->
-          <p class="lead rating">{{album.rating}}</p>
           <!-- Review -->
           <div ng-repeat="paragraph in album.review">
-            <ol>
-              <p class="lead">{{paragraph}}</p>
-            </ol>
+            <p class="lead">{{paragraph}}</p>
           </div>
           <!-- Author -->
-          <p>by: {{album.author}}</p>
+          <h4>by: {{album.author}}</h4>h4>
         </div>
       </div>
     </div>

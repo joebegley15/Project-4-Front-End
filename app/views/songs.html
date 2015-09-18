@@ -11,25 +11,19 @@
             <div class="title-wrap">
               <h1>{{song.title}}</h1>
               <!-- Author -->
-              <p>
+              <p class="lead">
                 {{song.artist}}
               </p>
-              <p>
+              <p class="lead">
                 {{song.album}}
               </p>
             </div>
           <!-- Rating -->
-          <p class="lead rating">{{song.rating}}</p>
           <!-- Review -->
           <div ng-repeat="paragraph in song.review">
-          <ol>
             <p class="lead">{{paragraph}}</p>
-          </ol>
           </div>
           <h4>by: {{song.author}}</h5>
-          <hr>
-          <br>
-          </br>
         </div>
       </div>
     </div>
