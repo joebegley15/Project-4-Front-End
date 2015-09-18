@@ -7,21 +7,21 @@
       <div class="col-lg-8">
         <div ng-repeat="song in songsCtrl.songs |orderBy:songsCtrl.sortBy:songsCtrl.reverse">
           <!-- Title -->
-
-            <h1>{{song.title}}</h1>
-            <!-- Author -->
-            <p class="lead">
-              {{song.artist}}
-            </p>
-            <p class="lead">
-              {{song.album}}
-            </p>
+            <img class="albumimg" src="{{album.image}}">
+            <div class="title-wrap">
+              <h1>{{song.title}}</h1>
+              <!-- Author -->
+              <p class="lead">
+                {{song.artist}}
+              </p>
+              <p class="lead">
+                {{song.album}}
+              </p>
+            </div>
           <!-- Rating -->
           <p class="lead rating">{{song.rating}}</p>
           <!-- Review -->
-          <div ng-repeat="par in song.review">
-            <p class="lead">{{par}}</p>
-          </div>
+          <p class="lead">{{song.review}}</p>
           <h5 class="lead">{{song.author}}</h5>
           <!-- Date/Time -->
           <!-- <p><span class="glyphicon glyphicon-time"><p>
