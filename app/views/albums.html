@@ -19,7 +19,9 @@
           <!-- Rating -->
           <p class="lead rating">{{album.rating}}</p>
           <!-- Review -->
-          <p class="lead">{{album.review}}</p>
+          <div ng-repeat="paragraph in album.review">
+            <p class="lead">{{album.review}}</p>
+          </div>
           <!-- Author -->
           <p>by: {{album.author}}</p>
         </div>
