@@ -19,19 +19,11 @@
           <!-- Rating -->
           <p class="lead rating">{{album.rating}}</p>
           <!-- Review -->
-          <p>{{album.review}}</p>
-          <!-- Date/Time -->
-          <!-- <p><span class="glyphicon glyphicon-time"><p>
-          <hr> -->
-          <!-- Preview Image -->
-          <!-- <img class="img-responsive" src="http://
-          placehold.it/900x300" alt="">
-          <hr> -->
-          <!-- Post Content -->
+          <div ng-repeat="par in album.review">
+            <p class="lead">{{par}}</p>
+          </div>
+          <!-- Author -->
           <p>by: {{album.author}}</p>
-          <hr>
-          <br>
-          </br>
         </div>
       </div>
     </div>

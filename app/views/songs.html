@@ -19,7 +19,9 @@
           <!-- Rating -->
           <p class="lead rating">{{song.rating}}</p>
           <!-- Review -->
-          <p class="lead">{{song.review}}</p>
+          <div ng-repeat="par in song.review">
+            <p class="lead">{{par}}</p>
+          </div>
           <h5 class="lead">{{song.author}}</h5>
           <!-- Date/Time -->
           <!-- <p><span class="glyphicon glyphicon-time"><p>
