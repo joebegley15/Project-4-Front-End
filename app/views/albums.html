@@ -9,20 +9,19 @@
           <!-- Title -->
           <img class="albumimg" src="{{album.image}}">
           <div class="title-wrap">
-          <h1>{{album.title}}</h1>
-          <!-- Author -->
-          <p class="lead">
-            {{album.artist}}
-          </p>
+            <h1>{{album.title}}</h1>
+            <!-- Author -->
+            <p class="lead">
+              {{album.artist}}
+            </p>
           </div>
-          <hr>
           <!-- Rating -->
           <p class="lead rating">{{album.rating}}</p>
           <!-- Review -->
           <div ng-repeat="paragraph in album.review">
-          <ol>
-            <p class="lead">{{paragraph}}</p>
-          </ol>
+            <ol>
+              <p class="lead">{{paragraph}}</p>
+            </ol>
           </div>
           <!-- Author -->
           <p>by: {{album.author}}</p>
