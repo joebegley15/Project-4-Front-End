@@ -14,6 +14,10 @@
   font-weight: bold;
 }
 
+.leadtitle {
+  margin-top: 0px;
+}
+
 .listHead {
   font-size: 16px;
   font-weight: bold;
@@ -26,6 +30,7 @@
 
 .title-wrap {
   display: inline-block;
+  height: 125px;
   margin-left: 50px;
 }
 
