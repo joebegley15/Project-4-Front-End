@@ -7,9 +7,11 @@
       <div class="col-lg-8">
         <div ng-repeat="song in songsCtrl.songs |orderBy:'-created_at'">
           <!-- Title -->
+            <div class="col-lg-2">
             <img class="albumimg" src="{{song.image}}">
-            <div class="title-wrap">
-              <h1>{{song.title}}</h1>
+            </div>
+            <div class="col-lg-10 title-wrap">
+              <h1 class="articleHead">{{song.title}}</h1>
               <!-- Author -->
               <p class="lead">
                 {{song.artist}}
