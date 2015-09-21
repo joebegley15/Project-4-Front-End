@@ -8,6 +8,7 @@
   width: 125px;
   height: 125px;
   display: inline-block;
+  vertical-align: text-top;
 }
 
 .listHead .listBold {
