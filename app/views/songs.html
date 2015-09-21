@@ -5,7 +5,7 @@
     <div class="row">
       <!-- Blog Post Content Column -->
       <div class="col-lg-8">
-        <div ng-repeat="song in songsCtrl.songs |orderBy:songsCtrl.sortBy:songsCtrl.reverse">
+        <div ng-repeat="song in songsCtrl.songs |orderBy:'-created_at'">
           <!-- Title -->
             <img class="albumimg" src="{{song.image}}">
             <div class="title-wrap">
@@ -24,7 +24,7 @@
             <p class="lead">{{paragraph}}</p>
           </div>
           <h4>by: {{song.author}}</h4>
-          <p>Date: {{song.updated_at | date}}</p>
+          <p>{{song.created_at | date}}</p>
         </div>
       </div>
     </div>
