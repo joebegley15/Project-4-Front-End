@@ -15,17 +15,17 @@
               <p class="lead">
                 {{song.artist}}
               </p>
-              <p class="lead rating">{{song.album}}</p>
+              <p class="lead">{{song.album}}</p>
             </div>
           </div>
           <hr>
-          <!-- Rating -->
-          <!-- Review -->
           <div ng-repeat="paragraph in song.review">
             <p class="lead">{{paragraph}}</p>
           </div>
           <h4>by: {{song.author}}</h4>
           <p>{{song.created_at | date}}</p>
+          <hr>
+          <br>
         </div>
       </div>
     </div>
