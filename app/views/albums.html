@@ -8,8 +8,9 @@
         <div ng-repeat="album in albumsCtrl.albums |orderBy:albumsCtrl.sortBy:albumsCtrl.reverse">
           <!-- Title -->
           <img class="albumimg" src="{{album.image}}">
-          <div class="col-lg-10 title-wrap">
+          <div class="title-wrap">
           <h1>{{album.title}}</h1>
+          <!-- Author -->
           <p class="lead">
             {{album.artist}}
           </p>
@@ -17,6 +18,7 @@
           </div>
           <hr>
           <!-- Rating -->
+          <p class="lead rating">{{album.rating}}</p>
           <!-- Review -->
           <div ng-repeat="par in album.review">
             <p>{{par}}</p>
