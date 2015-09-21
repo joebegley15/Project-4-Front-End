@@ -22,6 +22,11 @@
         controllerAs: 'listsCtrl',
         templateUrl: 'app/views/lists.html'
       })
+      .when('/articles', {
+        controller: 'articlesController',
+        controllerAs: 'articlesCtrl',
+        templateUrl: 'app/views/articles.html'
+      })
       .otherwise({
         redirectTo: '/'
       });

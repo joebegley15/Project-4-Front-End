@@ -1,0 +1,24 @@
+<div class="container">
+  <div class="row">
+    <div class="col-lg-8">
+      <div ng-repeat="article in articlesCtrl.lists |orderBy:'-created_at">
+        <div class="head-wrap">
+            <img class="albumimg" src="{{article.image}}">
+            <div class="title-wrap">
+              <h1 class="leadtitle">{{article.header}}</h1>
+              <!-- Author -->
+              <p class="lead">
+                {{article.subHeader}}
+              </p>
+              <p class="lead rating">{{article.subSubHeader}}</p>
+            </div>
+          </div>
+          <hr>
+          <p>{{article.articleText}}</p>
+          <br>
+          <iframe width="420" height="315"
+src="{{article.showURL}}"></iframe>
+      </div>
+    </div>
+  </div>
+</div>
