@@ -7,24 +7,23 @@
       <div class="col-lg-8">
         <div ng-repeat="album in albumsCtrl.albums |orderBy:albumsCtrl.sortBy:albumsCtrl.reverse">
           <!-- Title -->
-          <div class="title-wrap">
           <img class="albumimg" src="{{album.image}}">
-          <ol>
-            <h1>{{album.title}}</h1>
-            <!-- Author -->
-            <p class="lead">
-              {{album.artist}}
-            </p>
-            <p class="lead rating">{{album.rating}}</p>
-          </ol>
+          <div class="title-wrap">
+          <h1>{{album.title}}</h1>
+          <!-- Author -->
+          <p class="lead">
+            {{album.artist}}
+          </p>
           </div>
+          <hr>
           <!-- Rating -->
+          <p class="lead rating">{{album.rating}}</p>
           <!-- Review -->
-          <div ng-repeat="paragraph in album.review">
-            <p class="lead">{{paragraph}}</p>
+          <div ng-repeat="par in album.review">
+            <p>{{par}}</p>
           </div>
           <!-- Author -->
-          <h4>by: {{album.author}}</h4>
+          <p>by: {{album.author}}</p>
         </div>
       </div>
     </div>

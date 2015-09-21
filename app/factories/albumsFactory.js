@@ -9,6 +9,7 @@
     factory.getAlbums = function(){
       // allow access to the list of albums
       return  $http.get('https://frozen-wave-7557.herokuapp.com/albums').success(function(response){
+        console.log(response);
         angular.copy(response, factory.albums);
       });
     };
