@@ -5,24 +5,31 @@
   <!-- Page Content -->
   <div class="container">
     <div class="row">
-      <!-- Blog Post Content Column -->
       <div class="col-lg-8">
         <div ng-repeat="list in listsCtrl.lists |orderBy:listsCtrl.sortBy:listsCtrl.reverse">
-          <img class="albumimg" src="{{list.mainImage}}">
+
+          <div class="head-wrap">
+            <img class="albumimg" src="{{list.mainImage}}">
+
             <div class="title-wrap">
               <h1 class="leadtitle">{{list.title}}</h1>
               <p class="lead">
                 by: {{list.author}}
               </p>
-              <p>{{list.create_at}}</p>
+              <p>{{list.created_at | date }}</p>
             </div>
+
           </div>
+
           <div ng-repeat="descriptions in list.description">
             <p class="lead">{{descriptions}}</p>
           </div>
+
           <div ng-repeat="header in list.listHeader">
-            <img class="albumimg" src="{{list.images[$index]}}">
+
             <div class="head-wrap">
+              <img class="albumimg" src="{{list.images[$index]}}">
+
               <div class="title-wrap">
                 <h1 class="leadtitle"> {{[$index]}}. {{header}}</h1>
                 <!-- Author -->
@@ -31,10 +38,13 @@
                 </p>
                 <p class="lead">{{list.listHeader3[$index]}}</p>
               </div>
+
             </div>
+
             <hr>
             <p>{{list.listBody[$index]}}</p>
           </div>
+
         </div>
       </div>
     </div>
