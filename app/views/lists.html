@@ -20,10 +20,15 @@
             </div>
 
           </div>
+          <hr>
 
           <div ng-repeat="descriptions in list.description">
             <p class="lead">{{descriptions}}</p>
           </div>
+
+          <hr>
+          <br>
+          <br>
 
           <div ng-repeat="header in list.listHeader">
 
@@ -31,7 +36,7 @@
               <img class="albumimg" src="{{list.images[$index]}}">
 
               <div class="title-wrap">
-                <h1 class="leadtitle"> {{[$index]}}. {{header}}</h1>
+                <h1 class="leadtitle"> {{$index + 1}}. {{header}}</h1>
                 <!-- Author -->
                 <p class="lead">
                   {{list.listHeader2[$index]}}
