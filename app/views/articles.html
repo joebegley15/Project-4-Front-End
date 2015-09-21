@@ -1,7 +1,7 @@
 <div class="container">
   <div class="row">
     <div class="col-lg-8">
-      <div ng-repeat="article in articlesCtrl.lists |orderBy:'-created_at">
+      <div ng-repeat="article in articlesCtrl.articles |orderBy:'-created_at">
         <div class="head-wrap">
           <img class="albumimg" src="{{article.image}}">
           <div class="title-wrap">
