@@ -7,12 +7,9 @@
       <div class="col-lg-8">
         <div ng-repeat="album in albumsCtrl.albums |orderBy:albumsCtrl.sortBy:albumsCtrl.reverse">
           <!-- Title -->
-          <div class="col-lg-2">
           <img class="albumimg" src="{{album.image}}">
-          </div>
           <div class="col-lg-10 title-wrap">
           <h1>{{album.title}}</h1>
-          <!-- Author -->
           <p class="lead">
             {{album.artist}}
           </p>
