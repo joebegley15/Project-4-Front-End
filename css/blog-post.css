@@ -29,6 +29,7 @@
 }
 
 .head-wrap {
+  display: inline-block;
   height: 125px;
 }
 
