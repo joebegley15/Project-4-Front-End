@@ -21,9 +21,9 @@
 
   };
 
- ArticlesController.$inject = ['songsFactory', 'appSettings'];
+ ArticlesController.$inject = ['articlesFactory', 'appSettings'];
 
  // The Controller is part of the module.
- angular.module('musicApp').controller('songsController', ArticlesController);
+ angular.module('musicApp').controller('articlesController', ArticlesController);
 
 })();
