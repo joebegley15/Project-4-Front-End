@@ -3,7 +3,7 @@
   var ArticlesController = function(articlesFactory, appSettings){
     this.sortBy = "title";
     this.reverse = false;
-    this.songs =  articlesFactory.articles;
+    this.articles =  articlesFactory.articles;
     this.article = articlesFactory.article;
     this.appSettings = appSettings;
 
