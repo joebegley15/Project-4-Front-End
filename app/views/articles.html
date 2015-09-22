@@ -12,10 +12,10 @@
         </div>
         <hr>
         <div ng-repeat="paragraph in article.articleText">
-          <p>  {{paragraph}}</p>
+          <p class="lead">  {{paragraph}}</p>
         </div>
         <br>
-        <p> by: {{article.author}}
+        <h4>by: {{article.author}}</h4>
         <p>{{article.created_at | date}}
         <br>
         </p>
