@@ -1,6 +1,6 @@
 (function songsControllerIIFE(){
 
-  var ArticlesController = function(songsFactory, appSettings){
+  var ArticlesController = function(articlesFactory, appSettings){
     this.sortBy = "title";
     this.reverse = false;
     this.songs =  articlesFactory.articles;
