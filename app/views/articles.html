@@ -10,7 +10,6 @@
           </p>
           <p class="lead">{{article.subSubHeader}}</p>
         </div>
-        <img src="{{article.image}}">
         <hr>
         <div ng-repeat="paragraph in article.articleText">
           <p>{{paragraph}}</p>
@@ -19,9 +18,11 @@
         <p> by: {{article.author}}
         <p>{{article.created_at | date}}
         <br>
-        <a src="{{article.showURL}}">See the video</a>
+        <a href="{{article.showURL}}" target="_blank">See the video</a>
         </p>
         <br>
+        <hr>
+        <img class="article-image" src="{{article.image}}">
       </div>
     </div>
   </div>

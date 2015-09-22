@@ -11,6 +11,10 @@
   vertical-align: top;
 }
 
+.article-image {
+  text-align: middle;
+}
+
 .listHead .listBold {
   font-weight: bold;
 }
