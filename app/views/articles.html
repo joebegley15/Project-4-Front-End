@@ -8,7 +8,7 @@
           <p class="lead">
             {{article.subHeader}}
           </p>
-          <p class="lead rating">{{article.author}}</p>
+          <p class="lead">{{article.subSubHeader}}</p>
         </div>
         <img src="{{article.image}}">
         <hr>
@@ -16,9 +16,12 @@
           <p>{{paragraph}}</p>
         </div>
         <br>
-        <p>{{article.created}}</p>
+        <p> by: {{article.author}}
+        <p>{{article.created_at | date}}
         <br>
-        <iframe width="420" height="315" src="{{article.showURL | trusted}}"></iframe>
+        <a src="{{article.showURL}}">See the video</a>
+        </p>
+        <br>
       </div>
     </div>
   </div>
