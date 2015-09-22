@@ -1,4 +1,4 @@
-(function songsControllerIIFE(){
+(function articlesControllerIIFE(){
 
   var ArticlesController = function(articlesFactory, appSettings){
     this.sortBy = "title";
