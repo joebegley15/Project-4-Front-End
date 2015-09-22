@@ -2,7 +2,7 @@
   <div class="row">
     <div class="col-lg-8">
       <div ng-repeat="article in articlesCtrl.articles |orderBy:'-created_at'">
-        <div class="title-wrap">
+        <div class="article-head-wrap">
           <h1 class="leadtitle">{{article.header}}</h1>
           <!-- Author -->
           <p class="lead">
@@ -12,17 +12,16 @@
         </div>
         <hr>
         <div ng-repeat="paragraph in article.articleText">
-          <p>{{paragraph}}</p>
+          <p>  {{paragraph}}</p>
         </div>
         <br>
         <p> by: {{article.author}}
         <p>{{article.created_at | date}}
         <br>
-        <a href="{{article.showURL}}" target="_blank">See the video</a>
         </p>
+        <img class="article-image" src="{{article.image}}">
         <br>
         <hr>
-        <img class="article-image" src="{{article.image}}">
       </div>
     </div>
   </div>
