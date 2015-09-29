@@ -1,6 +1,10 @@
 (function songsControllerIIFE(){
 
   var SongsController = function(songsFactory, appSettings){
+
+    $scope.navbarCollapsed = true;
+
+
     this.sortBy = "title";
     this.reverse = false;
     this.songs =  songsFactory.songs;

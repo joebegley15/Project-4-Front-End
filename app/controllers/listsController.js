@@ -1,6 +1,10 @@
 (function listsControllerIIFE(){
 
   var ListsController = function(listsFactory, appSettings){
+
+    $scope.navbarCollapsed = true;
+
+
     this.sortBy = "title";
     this.reverse = false;
     this.lists =  listsFactory.lists;

@@ -1,6 +1,10 @@
 (function articlesControllerIIFE(){
 
   var ArticlesController = function(articlesFactory, appSettings){
+
+    $scope.navbarCollapsed = true;
+
+
     this.sortBy = "title";
     this.reverse = false;
     this.articles =  articlesFactory.articles;

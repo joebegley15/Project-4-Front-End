@@ -1,6 +1,9 @@
 (function albumsControllerIIFE(){
 
   var AlbumsController = function(albumsFactory, appSettings){
+
+    $scope.navbarCollapsed = true;
+
     this.sortBy = "title";
     this.reverse = false;
     this.albums =  albumsFactory.albums;
