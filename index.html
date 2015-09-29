@@ -27,21 +27,19 @@
     <div class="navbar navbar-inverse navbar-fixed-top" >
         <div class="container">
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse" ng-click="navbarCollapsed = !navbarCollapsed">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
                 <a class="navbar-brand" href="#">Music From The Basement</a>
             </div>
-            <div class="navbar-collapse collapse" collapse="navbarCollapsed">
+            <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-right">
-                <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-                    <li class="nav-link"><a href="http://joebegley15.github.io/Project-4-Front-End/#/">Songs</a></li>
+                    <li ng-click="$('.navbar-collapse').hide()"class="nav-link"><a href="http://joebegley15.github.io/Project-4-Front-End/#/">Songs</a></li>
                      <li class="nav-link"><a href="http://joebegley15.github.io/Project-4-Front-End/#/albums">Albums</a></li>
                     <li class="nav-link"><a href="http://joebegley15.github.io/Project-4-Front-End/#/lists">Lists</a></li>
                      <li class="nav-link"><a href="http://joebegley15.github.io/Project-4-Front-End/#/articles">Articles</a></li>
-                     </a>
                 </ul>
             </div>
 
