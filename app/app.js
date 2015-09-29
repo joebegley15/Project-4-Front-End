@@ -4,6 +4,11 @@
 
   var app = angular.module('musicApp', ['ngRoute']);
 
+
+  function NavBarCtrl($scope) {
+      $scope.isCollapsed = true;
+  }
+
   app.config(['$routeProvider', function($routeProvider) {
 
     $routeProvider
