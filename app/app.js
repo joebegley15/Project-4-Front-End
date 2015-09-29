@@ -1,9 +1,5 @@
 'use strict';
 
-$('.nav-link').on('click', function() {
-  $('.navbar-collapse').collapse('hide');
-});
-
 (function musicAppIIFE(){
 
   var app = angular.module('musicApp', ['ngRoute']);
