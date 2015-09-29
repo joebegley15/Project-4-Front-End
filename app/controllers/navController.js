@@ -1,6 +1,6 @@
 'use strict'
 
-$(document).(ready(){
+$(document).ready(function(){
 
   var closeNav = function() {
     $('.navbar-collapse').hide();
