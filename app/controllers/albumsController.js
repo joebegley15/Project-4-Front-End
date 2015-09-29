@@ -2,7 +2,7 @@
 
   var AlbumsController = function(albumsFactory, appSettings){
 
-    $scope.navbarCollapsed = true;
+    // $scope.navbarCollapsed = true;
 
     this.sortBy = "title";
     this.reverse = false;

@@ -2,7 +2,7 @@
 
   var SongsController = function(songsFactory, appSettings){
 
-    $scope.navbarCollapsed = true;
+    // $scope.navbarCollapsed = true;
 
 
     this.sortBy = "title";

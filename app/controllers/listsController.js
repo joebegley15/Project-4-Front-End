@@ -2,7 +2,7 @@
 
   var ListsController = function(listsFactory, appSettings){
 
-    $scope.navbarCollapsed = true;
+    // $scope.navbarCollapsed = true;
 
 
     this.sortBy = "title";
